@@ -1,0 +1,43 @@
+---
+import "../styles/global.css";
+const {
+  title = "Chickenburger Rating - Rate and Discover the Best Chickenburgers",
+} = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO -->
+    <title>{title}</title>
+    <meta
+      name="description"
+      content="Discover and rate the best chickenburgers in your area. Join our community of food enthusiasts and share your experiences!"
+    />
+    <meta
+      name="keywords"
+      content="chickenburger, rating, food, restaurant, review, community"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta
+      property="og:description"
+      content="Discover and rate the best chickenburgers in your area"
+    />
+    <meta property="og:type" content="website" />
+
+    <style is:global>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <slot />
+  </body>
+</html>
