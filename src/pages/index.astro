@@ -84,7 +84,7 @@ const faqs = [
       <!-- Add two floating chickenburgers, one on the right and one on the left -->
       <!-- First chickenburger, mirrored -->
       <div
-        class="absolute left-4 top-0 w-80 h-80 animate-float-2 transform -scale-x-100"
+        class="absolute left-8 top-0 md:left-4 md:top-0 w-80 h-80 animate-float-2 transform -scale-x-100"
       >
         <img
           src="/chickenburger.png"
@@ -92,7 +92,9 @@ const faqs = [
           class="w-full h-full object-contain transform"
         />
       </div>
-      <div class="absolute right-0 -top-5 w-72 h-72 animate-float">
+      <div
+        class="hidden md:block absolute right-0 -top-5 w-72 h-72 animate-float"
+      >
         <img
           src="/chickenburger.png"
           alt="Delicious chickenburger"
@@ -120,7 +122,7 @@ const faqs = [
       </div>
       <div class="container mx-auto px-4 text-center relative z-10">
         <h1
-          class="text-6xl md:text-7xl font-bold mb-6 text-amber-900 animate-fade-in"
+          class="text-4xl md:text-7xl font-bold mb-6 text-amber-900 animate-fade-in"
         >
           Welcome to <span class="text-orange-500">Chickenburger Scout</span>
         </h1>
